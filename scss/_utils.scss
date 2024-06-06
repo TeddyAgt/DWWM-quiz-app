@@ -1,0 +1,19 @@
+.btn {
+  padding: 4px 8px;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  display: block;
+
+  &--start {
+    background: var(--orange-primary);
+    color: #fff;
+    padding: 8px 16px;
+    margin-inline: auto;
+    font-size: 24px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    &:hover {
+      background: var(--orange-lighter);
+    }
+  }
+}

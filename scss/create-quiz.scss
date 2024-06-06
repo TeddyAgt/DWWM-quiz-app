@@ -1,0 +1,21 @@
+.section__create-quiz {
+  background: var(--white);
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.input-group--title {
+  &--saved {
+    display: none;
+  }
+}
+
+.question-container {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
