@@ -1,21 +1,33 @@
 .section__create-quiz {
-  background: var(--white);
-  padding: 16px;
-  border-radius: 8px;
-  width: 100%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  max-width: 650px;
+  margin: 0 auto;
 }
 
-.input-group--title {
-  &--saved {
+.quiz-name {
+  text-align: center;
+  margin-bottom: 16px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.create-quiz-form__title {
+  &--valid {
     display: none;
   }
 }
 
-.question-container {
+.create-quiz-form__question {
   display: none;
 
   &--active {
     display: block;
   }
+}
+
+.btn {
+  margin-inline: auto;
+}
+
+.btn--blue {
+  margin-bottom: 16px;
 }

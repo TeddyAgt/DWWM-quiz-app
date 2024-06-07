@@ -16,27 +16,33 @@
   <!-- Header -->
   <header>
     <nav class="navigation">
-      <a href="./pages/auth-form.html" class="navigation__link">Connexion</a>
+      <a href="../index.html" class="navigation__link">Accueil</a>
+      <a href="./login.html" class="navigation__link">Connexion</a>
       <!-- <a href="./pages/quiz-list.html" class="navigation__link">Voir les quiz</a> -->
-      <a href="./pages/profile.html" class="navigation__link">Profil</a>
-      <a href="./pages/create-quiz.html" class="navigation__link">Créer un quiz</a>
+      <a href="./profile.html" class="navigation__link">Profil</a>
+      <a href="./create-quiz.html" class="navigation__link">Créer un quiz</a>
     </nav>
   </header>
 
 
   <main class="">
 
-    <section class="section__create-quiz">
+    <section class="section__create-quiz card">
       <h1>Créer un <span>quiz</span></h1>
-      <form class="create-quiz-form">
+      <!-- <h2 class="quiz-name"></h2> -->
+
+      <form class="create-quiz-form__title">
 
         <div class="input-group input-group--title">
           <label for="title">Titre</label>
           <input type="text" id="title" name="title">
 
-          <button type="button" class="btn btn--next-btn">Suivant</button>
         </div>
+        <button type="submit" class="btn btn--orange">Suivant</button>
+        <p class="error-message error-message--title"></p>
+      </form>
 
+      <form class="create-quiz-form__question">
         <div class="question-container">
           <div class="input-group">
             <label for="question">Question</label>
@@ -55,14 +61,14 @@
             </div>
           </div>
 
-          <button type="button" class="btn btn--add-answer">Ajouter une réponse supplémentaire</button>
-          <button type="submit" class="btn btn--save-question">Sauvagarder la question</button>
+          <button type="button" class="btn btn--blue" id="add-answer">Ajouter une réponse supplémentaire</button>
+          <button type="submit" class="btn btn--orange">Sauvagarder la question</button>
         </div>
 
         <!-- <button type="button" class="btn btn--add-question">Nouvelle question</button> -->
 
         <!-- <button type="submit" class="btn">Sauvegarder</button> -->
-        <p class="error-message"></p>
+        <p class="error-message error-message-question"></p>
       </form>
 
     </section>
@@ -73,7 +79,7 @@
   <footer></footer>
 
   <script src="../javascript/script.js" type="module"></script>
-  <script src="../javascript/createQuiz.js" type="module"></script>
+  <script src="../javascript/create-quiz.js" type="module"></script>
 </body>
 
 
